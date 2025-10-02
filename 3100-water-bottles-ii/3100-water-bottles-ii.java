@@ -3,10 +3,10 @@ class Solution {
         int drunk = numBottles;   
         int empty = numBottles;  
         while (empty >= numExchange) {
-            empty -= numExchange;  // exchange-க்கு கொடுக்கிறோம்
-            drunk++;               // அந்த full bottle குடித்தோம்
-            empty++;               // குடித்த bottle -> empty
-            numExchange++;         // exchange requirement +1
+            empty -= numExchange; 
+            drunk++;               
+            empty++;               
+            numExchange++;         
         }
 
         return drunk;
